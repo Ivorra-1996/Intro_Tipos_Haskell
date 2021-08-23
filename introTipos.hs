@@ -1,8 +1,19 @@
 
 
--- 1
+-- 1 prodInt
+type R2 = (Float,Float)
+prodInt :: R2 -> R2 -> Float
+prodInt (a1,b1) (a2,b2) = (a1 * b1) + (a2 * b2)
 
+-- 2 todoMenor
+todoMenor :: R2 -> R2 -> Bool 
+todoMenor (x1,y1) (x2,y2) = x1 < x2 && y1 < y2
 
+-- 3 distanciaPuntos
+
+distanciaPuntos :: R2 -> R2 -> Float
+distanciaPuntos v1 v2 = sqrt(diferencia v1 v2)
+  where diferencia (x1,y1) (x2,y2) = (x1 - x2) + (y1 - y2) 
 
 -- 4 Sumas Terna
 
